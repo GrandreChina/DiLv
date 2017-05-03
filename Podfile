@@ -9,4 +9,5 @@ target 'DiLv' do
 
  pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
 
+ pod 'SDCycleScrollView','~> 1.64'
 end

@@ -21,15 +21,17 @@ class NavigationController: UINavigationController {
 
     }
 
-    lazy var backBtn: UIButton = UIButton(backTarget: self, action: #selector(NavigationController.backBtnAction))
+    lazy var backBtn:UIBarButtonItem = UIBarButtonItem(title: "<返回", style: .plain, target: self, action: #selector(self.backBtnAction))
     
+
     func backBtnAction() {
         self.popViewController(animated: true)
     }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if self.childViewControllers.count > 0 {
-            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backBtn)
+            viewController.navigationItem.leftBarButtonItem = backBtn
+          
             viewController.hidesBottomBarWhenPushed = true
         }
         super.pushViewController(viewController, animated: animated)

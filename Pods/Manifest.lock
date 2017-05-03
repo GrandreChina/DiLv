@@ -1,7 +1,13 @@
 PODS:
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
   - SVProgressHUD (2.1.2)
 
 DEPENDENCIES:
+  - SDCycleScrollView (~> 1.64)
   - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`)
 
 EXTERNAL SOURCES:
@@ -10,12 +16,14 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SVProgressHUD:
-    :commit: bd3f0ab86f8f4084cf6ff09cd1d98bc76456b90b
+    :commit: f7c8d0d5c9ec60aa7e0682d2f21cb60e8f83d084
     :git: https://github.com/SVProgressHUD/SVProgressHUD.git
 
 SPEC CHECKSUMS:
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: d65371a8e4482380deddb9fe60e14e59ddb30eb3
 
-PODFILE CHECKSUM: b6ebc2d1d1b697e93e885fb6a14f4aab9659127e
+PODFILE CHECKSUM: a5b58d2934f80f5b1621e1758aa563db7f0b4778
 
 COCOAPODS: 1.2.0
